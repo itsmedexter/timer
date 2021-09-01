@@ -23,8 +23,18 @@ class Timer {
   };
 
   tick = () => {
-    console.log("tick");
+    this.timeRemaining = this.timeRemaining - 1;
   };
+
+  // method on how to get value
+  get timeRemaining() {
+    return parseFloat(this.durationInput.value);
+  }
+
+  // method on how to set new value for time
+  set timeRemaining(time) {
+    this.durationInput.value = time;
+  }
 }
 
 // select the three html elements by using query selectors

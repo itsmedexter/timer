@@ -7,6 +7,21 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- svg canvas size -->
+    <svg height="200" width="200">
+      <!-- type of svg created on canvas axis, r=radius size; x,y= center point where to place -->
+      <circle
+        r="90"
+        cx="100"
+        cy="100"
+        fill="transparent"
+        stroke="blue"
+        stroke-width="10"
+        stroke-dasharray="565"
+        stroke-dashoffset="0"
+        transform="rotate(-90 100 100)"
+      />
+    </svg>
     <input id="duration" value="30" />
     <button id="start">Start</button>
     <button id="pause">Pause</button>
@@ -14,3 +29,6 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+<!-- transform rotate -90 rotates so starting point is at 12 oclock, 100 is x,y axis of circle -->
+<!-- dashoffset set at 0 and given a negative integer, will move white space clock wise -->
